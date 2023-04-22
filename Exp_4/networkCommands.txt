@@ -1,0 +1,9 @@
+// Basics of Networking Commands
+ifconfig
+ping
+nslookup
+traceroute
+host
+netstat
+dig
+route
