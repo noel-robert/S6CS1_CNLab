@@ -7,4 +7,5 @@ A public repo for storing all programs done as part of Networking Lab (CS1U38C)
     &emsp; Exp_2: InterProcess Communication using pipe() system call.   
     &emsp; Exp_3: InterProcess Communication using Named Pipes.   
     &emsp; Exp_4: Networking Commands.   
-    &emsp; Exp_5: TCP Chat program.   
+    &emsp; Exp_5: TCP Chat program between server and client.
+    &emsp; Exp_6: UDP Chat program between server and client.
