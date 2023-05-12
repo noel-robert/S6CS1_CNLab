@@ -9,3 +9,4 @@ A public repo for storing all programs done as part of Networking Lab (CS1U38C)
     &emsp; Exp_4: Networking Commands.   
     &emsp; Exp_5: TCP Chat program between server and client.
     &emsp; Exp_6: UDP Chat program between server and client.
+    &emsp; Exp_7: System Time request from server by 2 clients using UDP.
