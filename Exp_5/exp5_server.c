@@ -8,22 +8,54 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
+#include <stdbool.h>
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 
 int main() {
+    printf("Server_Side\n");
+    char buffer[32], message[32];
 
+    int sockfd, newSocket;
+    sockfd = socket(AF_INET, SOCK_STREAM, 0);
 
+    struct sockaddr_in addrport, clientAddr;
+    addrport.sin_family = AF_INET;
+    addrport.sin_addr.s_addr = INADDR_ANY;
+    addrport.sin_port = 3008;
+    bind(sockfd, (struct sockaddr *)&addrport, sizeof(addrport));
+
+    listen(sockfd, 12);
+    
+    int s = sizeof(struct sockaddr_in);
+    newSocket = accept(sockfd, (struct sockaddr*)&clientAddr, (&s));  // synchronization point
+
+    do {
+        printf("\nConncetion Established");
+
+        recv(newSocket, buffer, sizeof(buffer), 0);
+        printf("\nMessage received from client: %s", buffer);
+
+        printf("Enter message: ");
+        fgets(message, sizeof(message), stdin);
+        send(newSocket, message, sizeof(message), 0);
+    } while(strncmp(buffer, "stop", 4) != 0);
+
+    close(newSocket);
+    close(sockfd);
     return 0;
 }
 
 
-/*TODO:
-The steps involved in establishing a socket on the server side are as follows:
-1.	Create a socket with the socket() system call
-2.	Bind the socket to an address using the bind() system call. For a server socket on the Internet, an address consists of a port number on the host machine.
-3.	Listen for connections with the listen() system call
-4.	Accept a connection with the accept() system call. This call typically blocks until a client connects with the server.
-5.	Send and receive data
+/*OUTPUT
+Server_Side
+
+Conncetion Established
+Message received from client: Hello there
+Enter message: General Kenobi!
+
+Conncetion Established
+Message received from client: stop
+Enter message: stop
 */
