@@ -1,0 +1,1 @@
+Placeholder text in testfile2 to be accessed by server upon request from Client2.
