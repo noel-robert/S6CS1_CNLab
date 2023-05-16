@@ -46,6 +46,8 @@ void main() {
 		
 		send(sockfd, &mail, sizeof(mail), 0);		
 	} while(false);
+
+	close(sockfd);
 }
 
 
@@ -55,5 +57,5 @@ Connection Established
 Input destination E-Mail ID: receiver345@hotmail.com
 Input source E-Mail ID: sender1234@reddifmail.com
 Input E-Mail header: Announcement
-Input E-Mail body: Event launch on the next week.
+Input E-Mail body: Launch event next week
 */

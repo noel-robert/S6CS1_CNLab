@@ -69,10 +69,10 @@ void main() {
 		struct Email mail;
 		recv(newsocket, &mail, sizeof(mail), 0);
 		
-		printf("Input destination E-Mail ID: %s\n", mail.destinationAddress);
-		printf("Input source E-Mail ID: %s\n", mail.sourceAddress);
-		printf("Input E-Mail header: %s\n", mail.header);
-		printf("Input E-Mail body: %s\n", mail.body);
+		printf("Destination E-Mail ID: %s\n", mail.destinationAddress);
+		printf("Source E-Mail ID: %s\n", mail.sourceAddress);
+		printf("E-Mail header: %s\n", mail.header);
+		printf("E-Mail body: %s\n", mail.body);
 
 		// operations
 		strcpy(mail.destinationDomain, extract(mail.destinationAddress));
@@ -90,13 +90,13 @@ void main() {
 /*OUTPUT
 Server Side
 Connection Established
-Input destination E-Mail ID: receiver345@hotmail.com
+Destination E-Mail ID: receiver345@hotmail.com
 
-Input source E-Mail ID: sender1234@reddifmail.com
+Source E-Mail ID: sender1234@reddifmail.com
 
-Input E-Mail header: Announcement
+E-Mail header: Announcement
 
-Input E-Mail body: Event launch on the next week.
+E-Mail body: Launch event next week
 
 Destination E-Mail Domain: hotmail
 Source E-Mail Domain: reddifmail
