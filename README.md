@@ -11,4 +11,6 @@ A public repo for storing all programs done as part of Networking Lab (CS1U38C)
     &emsp; Exp_6: UDP Chat program between server and client.<br />
     &emsp; Exp_7: System Time request from server by 2 clients using UDP.<br />
     &emsp; Exp_8: Implementation of FTP using TCP.<br />
-    &emsp; Exp_9: Implementation of SMTP using TCP.<br />
+    &emsp; Exp_9: Implementation of SMTP using TCP.<br />    
+    &emsp; Exp_10: Implementing Distance Vector Routing algorithm.<br />
+    &emsp; Exp_11: Implementation of DNS using UDP.<br />
