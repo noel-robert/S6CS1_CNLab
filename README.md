@@ -18,5 +18,6 @@ A public repo for storing all programs done as part of Networking Lab (CS1U38C)
     &emsp; Exp_11: Implementation of DNS using UDP.<br />
     &emsp; Exp_12: Implementation of Leaky Bucket Algorithm.<br />
     &emsp; Exp_13: Implementation of Stop and Wait Protocol.<br />
-    &emsp; Exp_14: Implementation of Sliding Window Protocol - GoBackN.<br />
-    &emsp; Exp_15: Implementation of Sliding Window Protocol - SelectiveRepeat.<br />
+    &emsp; Exp_14(a): Implementation of Sliding Window Protocol - GoBackN.<br />
+    &emsp; Exp_14(b): Implementation of Sliding Window Protocol - SelectiveRepeat.<br />
+    &emsp; Exp_15: Employee Salary Calculation using TCP<br />

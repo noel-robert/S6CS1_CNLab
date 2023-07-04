@@ -57,3 +57,10 @@ int main () {
 	close(sockfd);
 	return 0;
 }
+
+/*OUTPUT
+Server Side
+Connection Established
+Connection Established
+Connection Established
+*/

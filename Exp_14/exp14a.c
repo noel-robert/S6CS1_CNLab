@@ -1,4 +1,4 @@
-// Experiment No.14 - Sliding Window Protocol, GoBackN
+// Experiment No.14(A) - Sliding Window Protocol, GoBackN
 // Noel John Robert
 // 47
 

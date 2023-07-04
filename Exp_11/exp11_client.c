@@ -40,3 +40,15 @@ int main () {
 		printf("IP Address of domain %s is %s", message, buffer);
 	} while (true);
 }
+
+/*OUTPUT
+Client Side
+Input domain name: google.com
+IP Address of domain google.com
+ is 192.168.1.1
+Input domain name: reddit.com
+IP Address of domain reddit.com
+ is 192.168.1.4
+Input domain name: amazon.in
+Domain not found
+*/

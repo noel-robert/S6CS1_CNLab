@@ -1,5 +1,5 @@
 // Experiment No. 6 - Client Server Communication using UDP
-// Server program
+// Client program
 // Noel John Robert
 // B20CS1147
 

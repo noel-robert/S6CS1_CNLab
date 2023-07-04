@@ -32,7 +32,7 @@ int main () {
     char systemTime[32];
 
     do {
-        printf("\nConncetion Established");
+        printf("\Connection Established");
         recvfrom(sockfd, buffer, sizeof(buffer), 0, (struct sockaddr*)&addrport, &s);
         printf("\nMessage received from client: %s", buffer);
 
@@ -47,21 +47,21 @@ int main () {
 }
 
 
-/*OUTPuT
+/*OUTPUT
 Server
 
-Conncetion Established
+Connection Established
 Message received from client: time1
 
-Conncetion Established
+Connection Established
 Message received from client: time2
 
-Conncetion Established
+Connection Established
 Message received from client: time3
 
-Conncetion Established
+Connection Established
 Message received from client: time4
 
-Conncetion Established
+Connection Established
 Message received from client: stop
 */

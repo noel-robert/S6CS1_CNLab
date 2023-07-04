@@ -1,5 +1,5 @@
 // Experiment No.9 - Implementation of SMTP using TCP.
-// Server program
+// Client program
 // Noel John Robert
 // B20CS1147
 

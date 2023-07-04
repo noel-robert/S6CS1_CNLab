@@ -29,7 +29,7 @@ int main() {
     bind(sockfd, (struct sockaddr*)&addrport, sizeof(addrport));
 
     do {
-        printf("\nConncetion Established");
+        printf("\nConnection Established");
         
         recvfrom(sockfd, buffer, sizeof(buffer), 0, (struct sockaddr*)&addrport, &s);
         printf("Message received from client: %s", buffer);
@@ -46,9 +46,9 @@ int main() {
 OUTPUT
 Server Side
 
-Conncetion EstablishedMessage received from client: Initial message to server
+Connection EstablishedMessage received from client: Initial message to server
 Enter message: Message received by server.
 
-Conncetion EstablishedMessage received from client: stop
+Connection EstablishedMessage received from client: stop
 Enter message: stop
 */

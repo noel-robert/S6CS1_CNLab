@@ -1,4 +1,4 @@
-// Experiment No.15 - Sliding Window Protocol, Selective Repeat
+// Experiment No.14(B) - Sliding Window Protocol, Selective Repeat
 // Noel John Robert
 // 47
 
